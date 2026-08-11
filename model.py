@@ -89,6 +89,9 @@ def predict_labels(x, params):
     preds = np.where(scores >= 0, 1, -1)
     return np.asarray(preds)
 
-# Step 11 - accuracy_score (not yet solved)
-# TODO: implement
+# Step 11 - accuracy_score
+import numpy as np
+
+def accuracy_score(y_pred, y_true):
+    return float(np.mean(y_true == y_pred))
 
